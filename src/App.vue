@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TopScreen/>
+    <CreateArticleScreen/>
+    <EditArticleScreen/>
+    <ArticleDetailScreen/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopScreen from './components/TopScreen.vue';
+import CreateArticleScreen from './components/CreateArticleScreen.vue';
+import EditArticleScreen from './components/EditArticleScreen.vue';
+import ArticleDetailScreen from './components/ArticleDetailScreen.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopScreen,
+    CreateArticleScreen,
+    EditArticleScreen,
+    ArticleDetailScreen
   }
 }
 </script>
